@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18DFC137277EE72C00CA58E2 /* hktest WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 18DFC136277EE72C00CA58E2 /* hktest WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18440917278066C200D1C1AC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18440916278066C200D1C1AC /* HealthKit.framework */; };
+		1844091A2780670100D1C1AC /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184409192780670100D1C1AC /* WorkoutManager.swift */; };
+		1844091C2780B1A000D1C1AC /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844091B2780B1A000D1C1AC /* StartView.swift */; };
+		1844091E2780C7D800D1C1AC /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844091D2780C7D800D1C1AC /* SummaryView.swift */; };
+		184409202780C80B00D1C1AC /* ActivityRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844091F2780C80B00D1C1AC /* ActivityRingsView.swift */; };
+		184409222780C83900D1C1AC /* SessionPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184409212780C83900D1C1AC /* SessionPagingView.swift */; };
+		184409242780C85D00D1C1AC /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184409232780C85D00D1C1AC /* ControlView.swift */; };
+		184409262780C88700D1C1AC /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184409252780C88700D1C1AC /* MetricsView.swift */; };
+		184409282780C8A000D1C1AC /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184409272780C8A000D1C1AC /* ElapsedTimeView.swift */; };
+		189CE70B2783615D001DAB84 /* MetricsView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189CE70A2783615D001DAB84 /* MetricsView2.swift */; };
+		18DFC137277EE72C00CA58E2 /* Hlaupihlaup SHS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 18DFC136277EE72C00CA58E2 /* Hlaupihlaup SHS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		18DFC13C277EE72E00CA58E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DFC13B277EE72E00CA58E2 /* Assets.xcassets */; };
 		18DFC142277EE72F00CA58E2 /* hktest WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18DFC141277EE72F00CA58E2 /* hktest WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		18DFC147277EE72F00CA58E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFC146277EE72F00CA58E2 /* ContentView.swift */; };
@@ -52,7 +62,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				18DFC137277EE72C00CA58E2 /* hktest WatchKit App.app in Embed Watch Content */,
+				18DFC137277EE72C00CA58E2 /* Hlaupihlaup SHS.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,8 +70,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18440914278066C200D1C1AC /* hktest WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "hktest WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		18440916278066C200D1C1AC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.3.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		184409192780670100D1C1AC /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		1844091B2780B1A000D1C1AC /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		1844091D2780C7D800D1C1AC /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		1844091F2780C80B00D1C1AC /* ActivityRingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingsView.swift; sourceTree = "<group>"; };
+		184409212780C83900D1C1AC /* SessionPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPagingView.swift; sourceTree = "<group>"; };
+		184409232780C85D00D1C1AC /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		184409252780C88700D1C1AC /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		184409272780C8A000D1C1AC /* ElapsedTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeView.swift; sourceTree = "<group>"; };
+		189CE70A2783615D001DAB84 /* MetricsView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView2.swift; sourceTree = "<group>"; };
 		18DFC132277EE72C00CA58E2 /* hktest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hktest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18DFC136277EE72C00CA58E2 /* hktest WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hktest WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DFC136277EE72C00CA58E2 /* Hlaupihlaup SHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hlaupihlaup SHS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DFC13B277EE72E00CA58E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18DFC141277EE72F00CA58E2 /* hktest WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "hktest WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DFC146277EE72F00CA58E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,18 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18440917278066C200D1C1AC /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18440915278066C200D1C1AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18440916278066C200D1C1AC /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18440918278066E200D1C1AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184409192780670100D1C1AC /* WorkoutManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		18DFC12B277EE72C00CA58E2 = {
 			isa = PBXGroup;
 			children = (
 				18DFC13A277EE72C00CA58E2 /* hktest WatchKit App */,
 				18DFC145277EE72F00CA58E2 /* hktest WatchKit Extension */,
 				18DFC133277EE72C00CA58E2 /* Products */,
+				18440915278066C200D1C1AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				18DFC132277EE72C00CA58E2 /* hktest.app */,
-				18DFC136277EE72C00CA58E2 /* hktest WatchKit App.app */,
+				18DFC136277EE72C00CA58E2 /* Hlaupihlaup SHS.app */,
 				18DFC141277EE72F00CA58E2 /* hktest WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -113,12 +152,22 @@
 		18DFC145277EE72F00CA58E2 /* hktest WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				18440918278066E200D1C1AC /* Controller */,
+				18440914278066C200D1C1AC /* hktest WatchKit Extension.entitlements */,
 				18DFC146277EE72F00CA58E2 /* ContentView.swift */,
 				18DFC148277EE72F00CA58E2 /* hktestApp.swift */,
 				18DFC14A277EE72F00CA58E2 /* ComplicationController.swift */,
 				18DFC14C277EE73000CA58E2 /* Assets.xcassets */,
 				18DFC151277EE73000CA58E2 /* Info.plist */,
 				18DFC14E277EE73000CA58E2 /* Preview Content */,
+				1844091B2780B1A000D1C1AC /* StartView.swift */,
+				1844091D2780C7D800D1C1AC /* SummaryView.swift */,
+				1844091F2780C80B00D1C1AC /* ActivityRingsView.swift */,
+				184409212780C83900D1C1AC /* SessionPagingView.swift */,
+				184409232780C85D00D1C1AC /* ControlView.swift */,
+				184409252780C88700D1C1AC /* MetricsView.swift */,
+				189CE70A2783615D001DAB84 /* MetricsView2.swift */,
+				184409272780C8A000D1C1AC /* ElapsedTimeView.swift */,
 			);
 			path = "hktest WatchKit Extension";
 			sourceTree = "<group>";
@@ -165,7 +214,7 @@
 			);
 			name = "hktest WatchKit App";
 			productName = "hktest WatchKit App";
-			productReference = 18DFC136277EE72C00CA58E2 /* hktest WatchKit App.app */;
+			productReference = 18DFC136277EE72C00CA58E2 /* Hlaupihlaup SHS.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		18DFC140277EE72F00CA58E2 /* hktest WatchKit Extension */ = {
@@ -259,8 +308,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				18DFC149277EE72F00CA58E2 /* hktestApp.swift in Sources */,
+				189CE70B2783615D001DAB84 /* MetricsView2.swift in Sources */,
+				1844091C2780B1A000D1C1AC /* StartView.swift in Sources */,
+				184409202780C80B00D1C1AC /* ActivityRingsView.swift in Sources */,
+				1844091A2780670100D1C1AC /* WorkoutManager.swift in Sources */,
 				18DFC147277EE72F00CA58E2 /* ContentView.swift in Sources */,
+				184409282780C8A000D1C1AC /* ElapsedTimeView.swift in Sources */,
 				18DFC14B277EE72F00CA58E2 /* ComplicationController.swift in Sources */,
+				184409262780C88700D1C1AC /* MetricsView.swift in Sources */,
+				1844091E2780C7D800D1C1AC /* SummaryView.swift in Sources */,
+				184409242780C85D00D1C1AC /* ControlView.swift in Sources */,
+				184409222780C83900D1C1AC /* SessionPagingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "hktest WatchKit Extension/hktest WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hktest WatchKit Extension/Preview Content\"";
@@ -406,7 +465,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "hktest WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "hktest WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = hktest_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -422,7 +481,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 8.1;
 			};
 			name = Debug;
 		};
@@ -430,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "hktest WatchKit Extension/hktest WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hktest WatchKit Extension/Preview Content\"";
@@ -438,7 +498,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "hktest WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "hktest WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = hktest_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,7 +514,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 8.1;
 			};
 			name = Release;
 		};
@@ -469,17 +529,16 @@
 				DEVELOPMENT_TEAM = 2744BQMKXM;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = hktest_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "hktest WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = odinndagur.hktest.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hlaupihlaup SHS";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 8.1;
 			};
 			name = Debug;
 		};
@@ -494,17 +553,16 @@
 				DEVELOPMENT_TEAM = 2744BQMKXM;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = hktest_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "hktest WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = odinndagur.hktest.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hlaupihlaup SHS";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 8.1;
 			};
 			name = Release;
 		};
