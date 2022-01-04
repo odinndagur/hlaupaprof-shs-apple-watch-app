@@ -11,7 +11,7 @@
   struct StartView: View {
       @EnvironmentObject var workoutManager: WorkoutManager
       var workoutType:HKWorkoutActivityType = .running
-
+      
       var body: some View {
           VStack{
               NavigationLink(workoutType.name, destination: SessionPagingView(),

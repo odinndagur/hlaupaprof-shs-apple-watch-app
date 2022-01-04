@@ -57,6 +57,8 @@ class WorkoutManager: NSObject, ObservableObject {
         builder?.beginCollection(withStart: startDate) { (success, error) in
             // The workout has started.
         }
+        session?.pause()
+        
     }
 
     // Request authorization to access HealthKit.

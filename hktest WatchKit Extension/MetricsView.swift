@@ -20,7 +20,7 @@ struct MetricsView: View {
     @EnvironmentObject var workoutManager: WorkoutManager
     func laps() -> String {
         let time = workoutManager.builder!.elapsedTime
-        return String(Int((time/53).rounded(.towardZero))) + "/15 laps"
+        return String(Int((time/53).rounded(.towardZero))) + "/15"
     }
     
     func lapDouble() -> Double {
@@ -32,6 +32,8 @@ struct MetricsView: View {
         let total: Double = 795
         return (total-time)
     }
+    
+    
 //    func lapTimeRemaining() -> Double {
 //        let lapGoal: Double = 53
 //        let currentLap = lapDouble()
@@ -43,17 +45,18 @@ struct MetricsView: View {
     var body: some View {
         TimelineView(MetricsTimelineSchedule(from: workoutManager.builder?.startDate ?? Date())) { context in
             VStack(alignment: .leading) {
-                ElapsedTimeView(elapsedTime: workoutManager.builder?.elapsedTime ?? 0, showSubseconds: context.cadence == .live)
-                    .foregroundStyle(.white)
-                Text(laps())
-                    .foregroundColor(.red)
-//                ElapsedTimeView(elapsedTime: timeRemaining(), showSubseconds: context.cadence == .live)
-//                    .foregroundStyle(.yellow)
-                //testa lap time
-//                ElapsedTimeView(elapsedTime: TimeInterval(53 - (Int((15-lapDouble()) * 53) % Int(timeRemaining()))), showSubseconds: context.cadence == .live)
-//                    .foregroundStyle(.yellow)
-                ElapsedTimeView(elapsedTime: (Double(53) -  (Double(15-lapDouble()) * 53).truncatingRemainder(dividingBy: timeRemaining())), showSubseconds: context.cadence == .live)
-                    .foregroundStyle(.yellow)
+                HStack{
+                    Text(laps())
+                        .foregroundColor(.white)
+                    ProgressView(value:lapDouble()/15)
+                        .progressViewStyle(CircularProgressViewStyle())
+                }
+                HStack{
+                    RemainingSecondsView(elapsedTime: (Double(53) -  (Double(15-lapDouble()) * 53).truncatingRemainder(dividingBy: timeRemaining())), showSubseconds: context.cadence == .live)
+                        .foregroundStyle(.yellow)
+                    ProgressView(value:((Double(53) -  (Double(15-lapDouble()) * 53).truncatingRemainder(dividingBy: timeRemaining())))/53.0)
+                        .progressViewStyle(CircularProgressViewStyle())
+                }
 //                Text(Measurement((workoutManager.builder?.elapsedTime ?? 0).formatted(.number.precision(.fractionLength(0))))
 //                        .formatted(.measurement(width: .abbreviated, usage: .workout, numberFormatStyle: .number.precision(.fractionLength(0)))))
 
@@ -63,6 +66,7 @@ struct MetricsView: View {
             }
             .font(.system(.title, design: .rounded).monospacedDigit().lowercaseSmallCaps())
             .frame(maxWidth: .infinity, alignment: .leading)
+//            .fixedSize(horizontal: true, vertical: false)
             .ignoresSafeArea(edges: .bottom)
             .scenePadding()
         }
